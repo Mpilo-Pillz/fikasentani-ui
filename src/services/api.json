@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "About Me",
+    "slug": "about-me",
+    "content": "I would describe myself as an individual that loves to learn. I have spent a majority of my career learning how to learn more efficiently and effectively and that is my greatest strength. I like to keep an open mind. I have worked primarily in the Quality Assurance (Testing) side of the Software Development Lifecycle (SDLC). I have spent a majority of my career working as a Test Automation Engineer. However recently I have switched to work on the Development side of the SDLC currently working as a Web Developer. I work as a front-end web developer and I enjoy the unique challenges it brings forth on a day to day. Outside of work hours, I focus on learning full stack web development, and mobile app development. I enjoy learning on Udemy. I over 6 years working professionally with NodeJS and JavaScript.",
+    "published_at": "2021-07-20T03:23:52.678Z",
+    "created_at": "2021-07-20T03:23:42.388Z",
+    "updated_at": "2021-07-27T19:34:30.095Z",
+    "thumbnail": null
+  }
+]
