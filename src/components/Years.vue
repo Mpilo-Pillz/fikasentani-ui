@@ -105,6 +105,7 @@ hr {
 </template>
 
 <script>
+import API_URL from "../common/config";
 export default {
   name: "Years",
   data() {
@@ -120,7 +121,7 @@ export default {
   methods: {
     async fetchMyYearsOfExperience() {
       const response = await fetch(
-        `http://localhost:4000/api/v1/summary/yearsOfExperience`
+        `${API_URL}/api/v1/summary/yearsOfExperience`
       );
       const yearsOfExperience = await response.json();
       this.myYearsOfExperience = yearsOfExperience;
