@@ -26,6 +26,7 @@ import Tools from "@/components/Tools.vue";
 import AboutMe from "@/components/AboutMe.vue";
 import Crafts from "@/components/Crafts.vue";
 import WorkHistory from "@/components/WorkHistory.vue";
+import { mapActions } from "vuex";
 export default {
   name: "Home",
   components: {
@@ -36,6 +37,10 @@ export default {
     Project,
     Years,
     Tools,
+  },
+  methods: mapActions(["fetchYears"]),
+  created() {
+    this.fetchYears();
   },
 };
 </script>
