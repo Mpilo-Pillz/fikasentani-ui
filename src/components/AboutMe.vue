@@ -35,7 +35,6 @@
 </template>
 
 <script>
-// import API_URL from "../common/config";
 import { mapActions, mapGetters } from "vuex";
 export default {
   name: "AboutMe",

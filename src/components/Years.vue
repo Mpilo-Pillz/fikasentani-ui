@@ -69,7 +69,7 @@ hr {
       <div class="total-years__header">
         <strong>
           <h1>
-            {{ allYears?.yearsOfExperience?.totalEngineering }}
+            {{ years?.years?.yearsOfExperience?.totalEngineering }}
           </h1>
         </strong>
       </div>
@@ -85,7 +85,7 @@ hr {
         <p class="font-weight--300 profession">
           Developer: <br />
           <strong class="year-pill">
-            {{ allYears?.yearsOfExperience?.developer }}
+            {{ years?.years?.yearsOfExperience?.developer }}
           </strong>
           years
         </p>
@@ -93,7 +93,7 @@ hr {
         <p class="font-weight--300 profession">
           Test Engineering: <br />
           <strong class="year-pill">
-            {{ allYears?.yearsOfExperience?.testEngineering }}</strong
+            {{ years?.years?.yearsOfExperience?.testEngineering }}</strong
           >
           years
         </p>
@@ -103,10 +103,10 @@ hr {
 </template>
 
 <script>
-import { mapActions, mapGetters } from "vuex";
+import { mapActions, mapState } from "vuex";
 export default {
   name: "Years",
-  computed: mapGetters(["allYears"]),
+  computed: mapState({ years: (state) => state.years }),
   methods: mapActions(["fetchYears"]),
   created() {
     this.fetchYears();
