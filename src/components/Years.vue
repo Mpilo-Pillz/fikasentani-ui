@@ -69,7 +69,7 @@ hr {
       <div class="total-years__header">
         <strong>
           <h1>
-            {{ allYears.yearsOfExperience.totalEngineering }}
+            {{ allYears?.yearsOfExperience?.totalEngineering }}
           </h1>
         </strong>
       </div>
@@ -85,7 +85,7 @@ hr {
         <p class="font-weight--300 profession">
           Developer: <br />
           <strong class="year-pill">
-            {{ allYears.yearsOfExperience.developer }}
+            {{ allYears?.yearsOfExperience?.developer }}
           </strong>
           years
         </p>
@@ -93,7 +93,7 @@ hr {
         <p class="font-weight--300 profession">
           Test Engineering: <br />
           <strong class="year-pill">
-            {{ allYears.yearsOfExperience.testEngineering }}</strong
+            {{ allYears?.yearsOfExperience?.testEngineering }}</strong
           >
           years
         </p>
