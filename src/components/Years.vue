@@ -69,7 +69,7 @@ hr {
       <div class="total-years__header">
         <strong>
           <h1>
-            {{ myYearsOfExperience?.yearsOfExperience?.totalEngineering }}
+            {{ allYears.yearsOfExperience.totalEngineering }}
           </h1>
         </strong>
       </div>
@@ -85,7 +85,7 @@ hr {
         <p class="font-weight--300 profession">
           Developer: <br />
           <strong class="year-pill">
-            {{ myYearsOfExperience?.yearsOfExperience?.developer }}
+            {{ allYears.yearsOfExperience.developer }}
           </strong>
           years
         </p>
@@ -93,9 +93,7 @@ hr {
         <p class="font-weight--300 profession">
           Test Engineering: <br />
           <strong class="year-pill">
-            {{
-              myYearsOfExperience?.yearsOfExperience?.testEngineering
-            }}</strong
+            {{ allYears.yearsOfExperience.testEngineering }}</strong
           >
           years
         </p>
@@ -105,27 +103,13 @@ hr {
 </template>
 
 <script>
-import API_URL from "../common/config";
+import { mapActions, mapGetters } from "vuex";
 export default {
   name: "Years",
-  data() {
-    return {
-      myYearsOfExperience: {},
-    };
-  },
-
-  mounted() {
-    this.fetchMyYearsOfExperience();
-  },
-
-  methods: {
-    async fetchMyYearsOfExperience() {
-      const response = await fetch(
-        `${API_URL}/api/v1/summary/yearsOfExperience`
-      );
-      const yearsOfExperience = await response.json();
-      this.myYearsOfExperience = yearsOfExperience;
-    },
+  computed: mapGetters(["allYears"]),
+  methods: mapActions(["fetchYears"]),
+  created() {
+    this.fetchYears();
   },
 };
 </script>

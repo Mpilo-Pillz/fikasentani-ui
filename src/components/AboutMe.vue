@@ -31,7 +31,8 @@
 </template>
 
 <script>
-import API_URL from "../common/config";
+// import API_URL from "../common/config";
+import LOCAL_API_URL from "../common/config";
 export default {
   name: "Years",
   data() {
@@ -47,7 +48,7 @@ export default {
   methods: {
     async fetchMyYearsOfExperience() {
       const response = await fetch(
-        `${API_URL}/api/v1/summary/yearsOfExperience`
+        `${LOCAL_API_URL}/api/v1/summary/yearsOfExperience`
       );
       const yearsOfExperience = await response.json();
       this.myYearsOfExperience = yearsOfExperience;
