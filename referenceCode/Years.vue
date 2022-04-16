@@ -103,9 +103,13 @@ hr {
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapActions, mapState } from "vuex";
 export default {
   name: "Years",
   computed: mapState({ years: (state) => state.years }),
+  methods: mapActions(["fetchYears"]),
+  created() {
+    this.fetchYears();
+  },
 };
 </script>

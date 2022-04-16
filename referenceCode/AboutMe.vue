@@ -35,9 +35,13 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 export default {
   name: "AboutMe",
   computed: mapGetters(["allYears"]),
+  methods: mapActions(["fetchYears"]),
+  created() {
+    this.fetchYears();
+  },
 };
 </script>
