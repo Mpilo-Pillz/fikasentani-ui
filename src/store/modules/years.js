@@ -10,7 +10,7 @@ const getters = {
 
 const actions = {
   async fetchYears({ commit }) {
-    const response = await makeRequest.get("/api/v1/summary/yearsOfExperience");
+    const response = await makeRequest.get("/api/v1/cv/summary/yearsOfExperience");
     console.log("REsso-->", response);
     commit("setYears", response);
   },
