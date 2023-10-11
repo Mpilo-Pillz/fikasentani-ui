@@ -1,5 +1,5 @@
 import API_URL from "../common/config";
-export const baseUrl = "http://localhost:1337";
+export const baseUrl = "https://fikasemail.fly.dev";
 // export const baseUrl = "./api.json";
 
 export const makeRequest = {
