@@ -850,19 +850,8 @@ CLASSES
           <div class="text-align--center">
             <h1 class="about-me-heading cv--underline">References</h1>
             <ul>
-              <li>
-                Lucky Hlakaza - Senior Developer - BMW <br />
-                <strong>website: https://www.luckza.me/ </strong>
-              </li>
-              <li>
-                Ndimphiwe Mayekiso - Developer Tech Lead - Osiris Trading <br />
-                <strong>website: https://ndimphiwe.com/ </strong>
-              </li>
-              <li>
-                Siseko Nomavila - Senior Developer - BMW <br />
-                <strong>website: https://siseko.me/</strong>
-              </li>
-            </ul>
+                <li>Available on Request</li>
+              </ul>
           </div>
 
           <br />

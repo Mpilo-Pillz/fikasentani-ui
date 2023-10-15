@@ -67,7 +67,7 @@ export default {
 
   methods: {
     async fetchMyTools() {
-      const response = await fetch(`${API_URL}/api/v1/tool`);
+      const response = await fetch(`${API_URL}/api/v1/cv/tool`); // TODO: use makeRequest
       this.myTools = await response.json();
     },
   },

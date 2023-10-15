@@ -70,7 +70,7 @@ a {
         <span class="nav-item">
           <router-link to="/training">Training</router-link>
         </span>
-        <span class="nav-item">
+        <span class="nav-item" v-if="isRoutReady">
           <router-link to="/cv">CV</router-link>
         </span>
       </nav>
@@ -96,6 +96,11 @@ a {
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      isRoutReady: false,
+    };
+  },
   methods: {
     goToHome() {
       this.$router.push("/");
